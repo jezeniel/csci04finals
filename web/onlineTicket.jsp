@@ -107,7 +107,7 @@
           </div>
           <div id ="main">
               <div id="main_header"><h3>Online Ticket - Philippines Airlines(PAL)</h3></div>
-                  <form action ="">
+                  <form action ="transactSuccess.jsp" method="POST">
                       <!-- TABLE 1 -->
                       <div class="table_format">
                           <div class="table_prehead">April 01, 2012</div>
@@ -213,7 +213,7 @@
                                   <td>Price</td>
                               </tr>
                               <tr id ="PR401">
-                                  <td><input type="radio" name="dpArrival" value="PR401"></td>
+                                  <td><input type="radio" name="flDeparture" value="PR401"></td>
                                   <td>PR401<br />7:30 AM</td>
                                   <td>Singapore <br />(SG)</td>
                                   <td>Manila <br />(MNL)</td>
@@ -221,7 +221,7 @@
                                   <td>$95.00</td>
                               </tr>
                               <tr id ="PR402">
-                                  <td><input type="radio" name="dpArrival" value="PR402"></td>
+                                  <td><input type="radio" name="flDeparture" value="PR402"></td>
                                   <td>PR402<br />9:30 PM</td>
                                   <td>Singapore <br />(SG)</td>
                                   <td>Manila <br />(MNL)</td>
@@ -229,7 +229,7 @@
                                   <td>$165.00</td>
                               </tr>
                               <tr id ="PR403">
-                                  <td><input type="radio" name="dpArrival" value="PR403"></td>
+                                  <td><input type="radio" name="flDeparture" value="PR403"></td>
                                   <td>PR403<br />1:30 PM</td>
                                   <td>Singapore <br />(SG)</td>
                                   <td>Manila <br />(MNL)</td>
@@ -237,7 +237,7 @@
                                   <td>$89.00</td>
                               </tr>
                               <tr id ="PR404">
-                                  <td><input type="radio" name="dpArrival" value="PR404"></td>
+                                  <td><input type="radio" name="flDeparture" value="PR404"></td>
                                   <td>PR404<br />4:30 AM</td>
                                   <td>Singapore <br />(SG)</td>
                                   <td>Manila <br />(MNL)</td>
@@ -259,7 +259,7 @@
                                   <td>Price</td>
                               </tr>
                               <tr id ="PR405">
-                                  <td><input type="radio" name="dpArrival" value="PR405"></td>
+                                  <td><input type="radio" name="flDeparture" value="PR405"></td>
                                   <td>PR405<br />7:30 AM</td>
                                   <td>Singapore <br />(SG)</td>
                                   <td>Manila <br />(MNL)</td>
@@ -267,7 +267,7 @@
                                   <td>$265.00</td>
                               </tr>
                               <tr id ="PR406">
-                                  <td><input type="radio" name="dpArrival" value="PR406"></td>
+                                  <td><input type="radio" name="flDeparture" value="PR406"></td>
                                   <td>PR406<br />9:30 PM</td>
                                   <td>Singapore <br />(SG)</td>
                                   <td>Manila <br />(MNL)</td>
@@ -275,7 +275,7 @@
                                   <td>$175.00</td>
                               </tr>
                               <tr id ="PR407">
-                                  <td><input type="radio" name="dpArrival" value="PR407"></td>
+                                  <td><input type="radio" name="flDeparture" value="PR407"></td>
                                   <td>PR407<br />1:30 PM</td>
                                   <td>Singapore <br />(SG)</td>
                                   <td>Manila <br />(MNL)</td>
@@ -283,7 +283,7 @@
                                   <td>$195.00</td>
                               </tr>
                               <tr id ="PR408">
-                                  <td><input type="radio" name="dpArrival" value="PR408"></td>
+                                  <td><input type="radio" name="flDeparture" value="PR408"></td>
                                   <td>PR408<br />4:30 AM</td>
                                   <td>Singapore <br />(SG)</td>
                                   <td>Manila <br />(MNL)</td>
@@ -294,7 +294,7 @@
                       </div>
 
 
-                     
+                       <input type="submit" value="Submit">
                   </form>
           </div>
       </div>
