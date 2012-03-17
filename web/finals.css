@@ -1,0 +1,39 @@
+/* 
+    Document   : finals
+    Created on : 12 20, 08, 1:35:43 PM
+    Author     : jezi22
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+html,body,div,p,fieldset,label{
+    margin:0;
+    padding:0;
+}
+
+#wrapper {
+    padding:10px 10px 10px 10px;
+    width:760px;
+    margin:0 auto;
+    overflow:hidden;
+    background:blue;
+}
+#sidebar {
+    width:30%;
+    padding:20px 20px 20px 20px;
+    border: 1px solid #000000;
+    float: left;
+}
+
+#main{
+    width:70%
+    float:right;
+    border: 1px solid #000000;
+}
+
+
+
