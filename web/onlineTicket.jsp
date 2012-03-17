@@ -27,8 +27,8 @@
             SAMPLE HEHE
           </div>
           <div id ="main">
-              <fieldset>
-                  <legend>Online Ticket - Philippines Airlines(PAL)</legend>
+              
+                  <h2>Online Ticket - Philippines Airlines(PAL)</h2>
                   <form action ="">
 
                       <label>Customer Name: </label>
@@ -44,8 +44,6 @@
                        <input type="radio" name="a">
                             <br class ="clearFloat">
                   </form>
-
-              </fieldset>
           </div>
       </div>
   </body>
