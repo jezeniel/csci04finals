@@ -27,22 +27,55 @@
             SAMPLE HEHE
           </div>
           <div id ="main">
-              
-                  <h2>Online Ticket - Philippines Airlines(PAL)</h2>
+              <div id="main_header"><h3>Online Ticket - Philippines Airlines(PAL)</h3></div>
                   <form action ="">
-
-                      <label>Customer Name: </label>
-                      <input type="text" name="custName">
-                            <br class ="clearFloat">
-                      <label>Address:</label>
-                      <input type="text" name="address">
-                            <br class ="clearFloat">
-                       <label>Radio 1</label>
-                       <input type="radio" name="a">
-                            <br class ="clearFloat">
-                       <label>Radio 2</label>
-                       <input type="radio" name="a">
-                            <br class ="clearFloat">
+                      <!-- TABLE 1 -->
+                      <div class="table_format">
+                          <div class="table_prehead">April 01, 2012</div>
+                          <table>
+                              <tr class="table_header">
+                                  <td></td>
+                                  <td>Flight</td>
+                                  <td>From</td>
+                                  <td>To</td>
+                                  <td>Duration</td>
+                                  <td>Price</td>
+                              </tr>
+                              <tr>
+                                  <td><input type="radio" name="flArrival" value="PR301"></td>
+                                  <td>PR301<br />7:30 AM</td>
+                                  <td>Manila <br />(MNL)</td>
+                                  <td>Singapore <br />(SG)</td>
+                                  <td>3:50</td>
+                                  <td>$335.00</td>
+                              </tr>
+                              <tr>
+                                  <td><input type="radio" name="flArrival" value="PR302"></td>
+                                  <td>PR302<br />9:30 PM</td>
+                                  <td>Manila <br />(MNL)</td>
+                                  <td>Singapore <br />(SG)</td>
+                                  <td>3:50</td>
+                                  <td>$175.00</td>
+                              </tr>
+                              <tr>
+                                  <td><input type="radio" name="flArrival" value="PR303"></td>
+                                  <td>PR303<br />1:30 PM</td>
+                                  <td>Manila <br />(MNL)</td>
+                                  <td>Singapore <br />(SG)</td>
+                                  <td>3:50</td>
+                                  <td>$225.00</td>
+                              </tr>
+                              <tr>
+                                  <td><input type="radio" name="flArrival" value="PR304"></td>
+                                  <td>PR304<br />4:30 AM</td>
+                                  <td>Manila <br />(MNL)</td>
+                                  <td>Singapore <br />(SG)</td>
+                                  <td>3:50</td>
+                                  <td>$195.00</td>
+                              </tr>
+                          </table>
+                      </div>
+                     
                   </form>
           </div>
       </div>
