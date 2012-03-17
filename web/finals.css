@@ -40,11 +40,17 @@ html,body,div,p,fieldset,label{
     margin: 5px 10px 15px 5px;
 }
 
+
 #main_header h3{
     margin: 0;
 }
 
 .table_format {
+    margin-bottom: 10px;
+
+}
+
+.table_format table {
     margin: 0 auto;
 }
 
@@ -54,6 +60,11 @@ html,body,div,p,fieldset,label{
     text-align: center;
 }
 
+.table_prehead {
+    margin-left: 22px;
+    margin-bottom: 5px;
+
+}
 
 .table_header td{
     font-weight: bold;
