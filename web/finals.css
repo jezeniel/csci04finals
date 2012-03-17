@@ -30,6 +30,15 @@ html,body,div,p,fieldset,label{
     float: left;
 }
 
+    #sidebar div{
+
+    }
+
+    #sidebar p{
+        font-size:12px;
+        margin-bottom:12px;
+
+}
 #main{
     width:500px;
     float:right;

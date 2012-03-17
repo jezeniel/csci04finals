@@ -13,84 +13,55 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel ="stylesheet" type="text/css" href="finals.css"/>
     <script type="text/javascript">
-        function hideObj(obj){
-            var obj = typeof obj=='object'?obj:document.getElementById('obj');
-            obj.style.display = 'none';
-        }
 
-        function showObj(obj,objVal){
-            var len = objVal.length;
-            obj.style.display = "block";
-            obj.innerHTML = "";
+       //Function which appends the contents to the sidebar div
+        function appendContents(elem,elemVal){
+            var sidebar = document.getElementById('sidebar');
+            var len = elemVal.length;
+
+            elem.innerHTML = "";
+            sidebar.style.display = "block";
+
             for(var i=0;i<len;i++){
-                obj.innerHTML+=objVal[i]+"</br>";
+                elem.innerHTML+=elemVal[i];
             }
         }
 
-        function extractValues(objId){
-            var objId = document.getElementById(objId);
-            var children = objId.childNodes;
+        //Function that extracts the row's content based on the radio button clicked
+        function extractValues(elemId){
+            var obj = document.getElementById(elemId);
+            var children = obj.childNodes;
             var arrayValues = [];
+            arrayValues[0] = "<h1>"+"</h1>"
             for(var i = 2;i<children.length;i++){
               if(children[i].nodeName=='TD'){
-                   arrayValues.push(children[i].innerHTML);
+                   arrayValues.push("<p>"+children[i].innerHTML+"</p>");
 
               }
-            } 
+            }
             return arrayValues;
         }
 
-        function traverseRadio(obj,elem){
+
+        function traverseElem(obj,elem){
             var len = obj.length;
             for(var i = 0;i<len;i++){
                 obj[i].onclick = function(){
-                    var val1 = extractValues(this.value);
-                    showObj(elem,val1);
+                    var val = extractValues(this.value);
+                    appendContents(elem,val);
                 }
             }
         }
 
         function getRadios(){
-            //get all input elements
-           // var input = document.getElementsByTagName('input');
-            var div = document.getElementById('sidebar');
-            var arrival = document.getElementsByName('flArrival');
-            var departure = document.getElementsByName('dpArrival');
+                var arrivalDiv = document.getElementById('arrival');
+                var departDiv = document.getElementById('departure');
+                var arrival = document.getElementsByName('flArrival');
+                var departure = document.getElementsByName('dpArrival');
 
-            
-            
-            traverseRadio(arrival,div);
-            traverseRadio(departure,div);
-            /*for(var i = se0,len=arrival.length;i<len;i++){
-                arrival[i].onclick = function(){
-                    var val1 = extractValues(this.value);
-                    showObj(div,val1);
-                }
-            }*/
+                    traverseElem(arrival,arrivalDiv);
+                    traverseElem(departure,departDiv);
 
-           /* for(var j = 0,length=departure.length;j<length;j++){
-                departure[j].onclick = function(){
-                    var val2 = extractValues(this.value);
-                    showObj(div,val2);
-                }
-            }*/
-
-            /*for(var i =0,len = input.length;i<len;i++ ){
-                if(input[i].type=='radio'){
-                    input[i].onclick = function(){
-                        //gets the
-                         var radios = document.getElementsByName(this.name);
-                         return (function(par){
-                             for(var j = 0,l = par.length;j<l;j++){
-                                 par[j].onclick = function(){
-                                     var val = extractValues(this.value);
-                                     showObj(div,val);
-                                 };
-                             }
-                         })(radios);
-                   };
-                }
-            }*/
         }
         window.onload = getRadios;
     </script>
