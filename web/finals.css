@@ -25,19 +25,29 @@ html,body,div,p,fieldset,label{
 #sidebar {
     display:none;
     width:30%;
-    padding:20px 20px 20px 20px;
+    padding:0px 20px 20px 20px;
     border: 1px solid #000000;
     float: left;
 }
 
-    #sidebar div{
+#sidebar div{
+}
 
-    }
+#sidebar b {
+    font-size:13px;
+}
 
-    #sidebar p{
-        font-size:12px;
-        margin-bottom:12px;
+#sidebar h4 {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#sidebar p{
+  font-size:12px;
+  margin-bottom:12px;
+}
 
+#departure {
+    border-top: 1px dashed #000000;
 }
 #main{
     width:500px;
@@ -55,6 +65,11 @@ html,body,div,p,fieldset,label{
     margin: 0;
 }
 
+.flight_type{
+    margin-left:10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
 .table_format {
     margin-bottom: 10px;
 
@@ -70,7 +85,7 @@ html,body,div,p,fieldset,label{
     text-align: center;
 }
 
-.table_prehead {
+.table_date {
     margin-left: 22px;
     margin-bottom: 5px;
 

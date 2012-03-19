@@ -18,12 +18,18 @@
         function appendContents(elem,elemVal){
             var sidebar = document.getElementById('sidebar');
             var len = elemVal.length;
-
+            var label = ["Flight #/ Time:", "From:", "To:", "Duration:", "Price:"];
+           
             elem.innerHTML = "";
             sidebar.style.display = "block";
 
+            if(elem.getAttribute("id")== "arrival")
+                elem.innerHTML += "<h4>Arrival</h4>";
+            if(elem.getAttribute("id")== "departure")
+                elem.innerHTML += "<h4>Departure</h4>";
+            
             for(var i=0;i<len;i++){
-                elem.innerHTML+=elemVal[i];
+                elem.innerHTML+= "<b>" +label[i] + "</b> " + elemVal[i];
             }
         }
 
@@ -32,7 +38,6 @@
             var obj = document.getElementById(elemId);
             var children = obj.childNodes;
             var arrayValues = [];
-            arrayValues[0] = "<h1>"+"</h1>"
             for(var i = 2;i<children.length;i++){
               if(children[i].nodeName=='TD'){
                    arrayValues.push("<p>"+children[i].innerHTML+"</p>");
@@ -57,10 +62,10 @@
                 var arrivalDiv = document.getElementById('arrival');
                 var departDiv = document.getElementById('departure');
                 var arrival = document.getElementsByName('flArrival');
-                var departure = document.getElementsByName('dpArrival');
-
-                    traverseElem(arrival,arrivalDiv);
-                    traverseElem(departure,departDiv);
+                var departure = document.getElementsByName('flDeparture');
+                
+                traverseElem(arrival,arrivalDiv);
+                traverseElem(departure,departDiv);
 
         }
         window.onload = getRadios;
@@ -68,20 +73,21 @@
   </head>
   <body>
       <div id ="wrapper">
+
           <div id ="sidebar">
-            SAMPLE HEHE
             <div id ="arrival">
             </div>
             <div id ="departure">
             </div>
-
           </div>
+          
           <div id ="main">
               <div id="main_header"><h3>Online Ticket - Philippines Airlines(PAL)</h3></div>
                   <form action ="transactSuccess.jsp" method="POST">
                       <!-- TABLE 1 -->
+                      <div class="flight_type">Arrival </div>
                       <div class="table_format">
-                          <div class="table_prehead">April 01, 2012</div>
+                          <div class="table_date">April 01, 2012</div>
                           <table>
                               <tr class="table_header">
                                   <td></td>
@@ -127,7 +133,7 @@
                       </div>
                       <!-- TABLE 2 -->
                       <div class="table_format">
-                          <div class="table_prehead">April 02, 2012</div>
+                          <div class="table_date">April 02, 2012</div>
                           <table>
                               <tr class="table_header">
                                   <td></td>
@@ -173,7 +179,7 @@
                       </div>
                        <!-- TABLE 3 -->
                       <div class="table_format">
-                          <div class="table_prehead">April 03, 2012</div>
+                          <div class="table_date">April 03, 2012</div>
                           <table>
                               <tr class="table_header">
                                   <td></td>
@@ -218,8 +224,9 @@
                           </table>
                       </div>
                        <!-- TABLE 4 -->
+                       <div class="flight_type">Departure </div>
                       <div class="table_format">
-                          <div class="table_prehead">April 04, 2012</div>
+                          <div class="table_date">April 04, 2012</div>
                           <table>
                               <tr class="table_header">
                                   <td></td>
