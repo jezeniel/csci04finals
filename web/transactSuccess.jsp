@@ -42,7 +42,7 @@
         %>
     </head>
     <body>
-        <!-- TODO: FINAL OUTPUT -->
+        <!--TODO: FINAL OUTPUT -->
         <h1>Arrival</h1>
             <%
                 for(int i=0;i < arrival.length; i++)
