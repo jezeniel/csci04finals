@@ -58,7 +58,7 @@
         <h1>Departure</h1>
             <%
                 for(int i=0;i < departure.length; i++)
-                    if(arrival[i][0].equals(idDepart)) {
+                    if(departure[i][0].equals(idDepart)) {
                         index = i;
                         break;
                     }

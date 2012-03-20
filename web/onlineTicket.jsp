@@ -121,6 +121,7 @@
                           </table>
                       </div>
                        <!-- TABLE 3 -->
+                       <div class="flight_type">Departure </div>
                       <div class="table_format">
                           <div class="table_date">April 03, 2012</div>
                           <table>
@@ -167,7 +168,6 @@
                           </table>
                       </div>
                        <!-- TABLE 4 -->
-                       <div class="flight_type">Departure </div>
                       <div class="table_format">
                           <div class="table_date">April 04, 2012</div>
                           <table>
