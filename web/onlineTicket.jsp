@@ -8,10 +8,10 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <title>Online Ticket</title>
+    <title>Online Ticket - Philippine Airlines</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel ="stylesheet" type="text/css" href="finals.css"/>
-    <script src ="finals.js" type="text/javascript"></script>
+    <link rel ="stylesheet" type="text/css" href="style.css"/>
+    <script src ="tableparse.js" type="text/javascript"></script>
   </head>
   <body>
       <div id ="wrapper">
@@ -215,7 +215,7 @@
                       </div>
 
 
-                       <input type="submit" value="Submit">
+                      <input type="submit" value="Submit">
                   </form>
           </div>
       </div>

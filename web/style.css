@@ -6,10 +6,7 @@
         Purpose of the stylesheet follows.
 */
 
-/* 
-   TODO customize this sample style
-   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
-*/
+/* CSS for onlineTicket.jsp START */
 html,body,div,p,fieldset,label{
     margin:0;
     padding:0;
@@ -95,5 +92,6 @@ html,body,div,p,fieldset,label{
     font-weight: bold;
 }
 
+/* CSS for onlineTicket.jsp END */
 
 

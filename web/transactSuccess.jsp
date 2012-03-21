@@ -11,7 +11,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Online Ticket</title>
+        <link rel="stylesheet" type="text/css" href="transactSuccess.css">
+        <title>Transaction Successful</title>
         <%
             String idArrival = request.getParameter("flArrival");
             String idDepart = request.getParameter("flDeparture");
@@ -50,18 +51,20 @@
         %>
     </head>
     <body>
-        
-        <h1>Arrival</h1>
-            <%=arrival[arrivalIndex][1]%><br>
-            <%=arrival[arrivalIndex][0]%><br>
-            <%=arrival[arrivalIndex][2]%><br>
-            <%=arrival[arrivalIndex][3]%><br>
-        <h1>Departure</h1>
-
-            <%=departure[departIndex][1]%><br>
-            <%=departure[departIndex][0]%><br>
-            <%=departure[departIndex][2]%><br>
-            <%=departure[departIndex][3]%><br>
-
+        <div id="wrapper">
+            <div id="inner_wrap">
+                <div id="banner">Philippine Airlines (PAL)</div>
+                <div class="header"><h1>Arrival</h1></div>
+                    <%=arrival[arrivalIndex][1]%><br>
+                    <%=arrival[arrivalIndex][0]%><br>
+                    <%=arrival[arrivalIndex][2]%><br>
+                    <%=arrival[arrivalIndex][3]%><br>
+                <div class="header"><h1>Departure</h1></div>
+                    <%=departure[departIndex][1]%><br>
+                    <%=departure[departIndex][0]%><br>
+                    <%=departure[departIndex][2]%><br>
+                    <%=departure[departIndex][3]%><br>
+            </div>
+        </div>
     </body>
 </html>
