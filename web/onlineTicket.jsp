@@ -8,7 +8,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <title></title>
+    <title>Online Ticket</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel ="stylesheet" type="text/css" href="finals.css"/>
     <script src ="finals.js" type="text/javascript"></script>

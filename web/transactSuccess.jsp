@@ -11,11 +11,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Online Ticket</title>
         <%
             String idArrival = request.getParameter("flArrival");
             String idDepart = request.getParameter("flDeparture");
-            int index = 0;
+            int arrivalIndex = 0, departIndex = 0;
             String[][] arrival = new String [][]
             {
             {"PR301", "April 01,2012", "7:30 AM", "$335.00"},
@@ -39,34 +39,29 @@
             {"PR407","April 04,2012", "1:15 AM", "$195.00"},
             {"PR408","April 04,2012", "4:15 AM", "$201.00"}
             };
+            for(int i=0;i < arrival.length; i++){
+                if(arrival[i][0].equals(idArrival)) {
+                    arrivalIndex = i;
+                }
+                if(departure[i][0].equals(idDepart)){
+                    departIndex = i;
+                }
+            }
         %>
     </head>
     <body>
-        <!--TODO: FINAL OUTPUT -->
+        
         <h1>Arrival</h1>
-            <%
-                for(int i=0;i < arrival.length; i++)
-                    if(arrival[i][0].equals(idArrival)) {
-                        index = i;
-                        break;
-                    }
-            %>
-            <%=arrival[index][1]%><br>
-            <%=arrival[index][0]%><br>
-            <%=arrival[index][2]%><br>
-            <%=arrival[index][3]%><br>
+            <%=arrival[arrivalIndex][1]%><br>
+            <%=arrival[arrivalIndex][0]%><br>
+            <%=arrival[arrivalIndex][2]%><br>
+            <%=arrival[arrivalIndex][3]%><br>
         <h1>Departure</h1>
-            <%
-                for(int i=0;i < departure.length; i++)
-                    if(departure[i][0].equals(idDepart)) {
-                        index = i;
-                        break;
-                    }
-            %>
-            <%=departure[index][1]%><br>
-            <%=departure[index][0]%><br>
-            <%=departure[index][2]%><br>
-            <%=departure[index][3]%><br>
+
+            <%=departure[departIndex][1]%><br>
+            <%=departure[departIndex][0]%><br>
+            <%=departure[departIndex][2]%><br>
+            <%=departure[departIndex][3]%><br>
 
     </body>
 </html>
