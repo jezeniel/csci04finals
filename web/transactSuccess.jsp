@@ -16,8 +16,8 @@
         <%
             String idArrival = request.getParameter("flArrival");
             String idDepart = request.getParameter("flDeparture");
-            String aDate, aFlightNo, aTime, aPrice;
-            String dDate, dFlightNo, dTime, dPrice;
+            String aDate, aFlightNo, aTime, aPrice, aArTime;
+            String dDate, dFlightNo, dTime, dPrice, dArTime;
             int arrivalIndex = 0, departIndex = 0;
             String[][] arrival = new String [][]
             {
@@ -54,11 +54,13 @@
             aFlightNo = arrival[arrivalIndex][0];
             aTime = arrival[arrivalIndex][2];
             aPrice = arrival[arrivalIndex][3];
-
+            aArTime = arrival[arrivalIndex][4];
+            
             dDate = departure[departIndex][1];
             dFlightNo = departure[departIndex][0];
             dTime = departure[departIndex][2];
             dPrice = departure[departIndex][3];
+            dArTime = departure[departIndex][4];
 
         %>
     </head>
@@ -66,8 +68,8 @@
         <div id="wrapper">
             <div id="inner_wrap">
                 <div id="banner">Philippine Airlines (PAL)</div>
-                <div class="header"><h1>Departure</h1></div>
-                    <table>
+                <div class="header"><h4>Departure</h4></div>
+                    <table  class="table_float">
                         <tr>
                             <td><%=aDate%></td>
                         </tr>
@@ -76,22 +78,32 @@
                             <td><%=aPrice%></td>
                         </tr>
                         <tr>
+                            <td>Flight #</td>
                             <td><%=aFlightNo%></td>
-                            <td><%=aTime%></td>
                         </tr>
                         <tr>
                             <td>Duration</td>
                             <td>3:50</td>
+                        </tr>
+                       </table>
+                       <table>
+                        <tr>
+                            <td>From</td>
+                        </tr>
+                        <tr>
+                            <td>Philippines</td>
+                            <td><%=aTime%></td>
                         </tr>
                         <tr>
                             <td><br>Arrive</td>
                         </tr>
                         <tr>
                             <td>Singapore</td>
+                            <td><%=aArTime%></td>
                         </tr>
-                    </table>
-                <div class="header"><h1>Return</h1></div>
-                    <table>
+                       </table>
+                <div class="header"><h4>Return</h4></div>
+                    <table class="table_float">
                         <tr>
                             <td><%=dDate%></td>
                         </tr>
@@ -107,11 +119,21 @@
                             <td>Duration</td>
                             <td>3:50</td>
                         </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>From</td>
+                        </tr>
+                        <tr>
+                            <td>Singapore</td>
+                            <td><%=dTime%></td>
+                        </tr>
                         <tr>
                             <td><br>Arrive</td>
                         </tr>
                         <tr>
                             <td>Philippines</td>
+                            <td><%=dArTime%></td>
                         </tr>
                     </table>
             </div>
