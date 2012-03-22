@@ -13,9 +13,9 @@ function appendContents(elem,elemVal){
     sidebar.style.display = "block";
 
     if(elem.getAttribute("id")== "arrival")
-        elem.innerHTML += "<h4>Arrival</h4>";
-    if(elem.getAttribute("id")== "departure")
         elem.innerHTML += "<h4>Departure</h4>";
+    if(elem.getAttribute("id")== "departure")
+        elem.innerHTML += "<h4>Return</h4>";
 
     for(var i=0;i<len;i++){
         elem.innerHTML+= "<b>" +label[i] + "</b> " + elemVal[i];

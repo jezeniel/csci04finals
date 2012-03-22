@@ -17,7 +17,7 @@
       <div id ="wrapper">
 
           <div id ="sidebar">
-              <h1>Flight</h1>
+              <h1>Ticket Info</h1>
             <div id ="arrival">
             </div>
             <div id ="departure">
@@ -28,7 +28,7 @@
               <div id="main_header"><h3>Online Ticket - Philippines Airlines(PAL)</h3></div>
                   <form action ="transactSuccess.jsp" method="POST">
                       <!-- TABLE 1 -->
-                      <div class="flight_type">Arrival </div>
+                      <div class="flight_type">Flight Destination </div>
                       <div class="table_format">
                           <div class="table_date">April 01, 2012</div>
                           <table>
@@ -121,7 +121,7 @@
                           </table>
                       </div>
                        <!-- TABLE 3 -->
-                       <div class="flight_type">Departure </div>
+                       <div class="flight_type">Flight Return </div>
                       <div class="table_format">
                           <div class="table_date">April 03, 2012</div>
                           <table>

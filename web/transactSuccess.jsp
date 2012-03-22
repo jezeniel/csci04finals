@@ -16,6 +16,8 @@
         <%
             String idArrival = request.getParameter("flArrival");
             String idDepart = request.getParameter("flDeparture");
+            String aDate, aFlightNo, aTime, aPrice;
+            String dDate, dFlightNo, dTime, dPrice;
             int arrivalIndex = 0, departIndex = 0;
             String[][] arrival = new String [][]
             {
@@ -48,22 +50,32 @@
                     departIndex = i;
                 }
             }
+            aDate = arrival[arrivalIndex][1];
+            aFlightNo = arrival[arrivalIndex][0];
+            aTime = arrival[arrivalIndex][2];
+            aPrice = arrival[arrivalIndex][3];
+
+            dDate = departure[departIndex][1];
+            dFlightNo = departure[departIndex][0];
+            dTime = departure[departIndex][2];
+            dPrice = departure[departIndex][3];
+
         %>
     </head>
     <body>
         <div id="wrapper">
             <div id="inner_wrap">
                 <div id="banner">Philippine Airlines (PAL)</div>
-                <div class="header"><h1>Arrival</h1></div>
-                    <%=arrival[arrivalIndex][1]%><br>
-                    <%=arrival[arrivalIndex][0]%><br>
-                    <%=arrival[arrivalIndex][2]%><br>
-                    <%=arrival[arrivalIndex][3]%><br>
                 <div class="header"><h1>Departure</h1></div>
-                    <%=departure[departIndex][1]%><br>
-                    <%=departure[departIndex][0]%><br>
-                    <%=departure[departIndex][2]%><br>
-                    <%=departure[departIndex][3]%><br>
+                    <%=aDate%><br>
+                    <%=aFlightNo%><br>
+                    <%=aTime%><br>
+                    <%=aPrice%><br>
+                <div class="header"><h1>Return</h1></div>
+                    <%=dDate%><br>
+                    <%=dFlightNo%><br>
+                    <%=dTime%><br>
+                    <%=dPrice%><br>
             </div>
         </div>
     </body>
