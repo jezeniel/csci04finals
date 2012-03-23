@@ -16,6 +16,8 @@
         <%
             String idArrival = request.getParameter("flArrival");
             String idDepart = request.getParameter("flDeparture");
+            String fname = request.getParameter("fullname");
+            String address = request.getParameter("address");
             String aDate, aFlightNo, aTime, aPrice, aArTime;
             String dDate, dFlightNo, dTime, dPrice, dArTime;
             int arrivalIndex = 0, departIndex = 0;
@@ -67,7 +69,19 @@
     <body>
         <div id="wrapper">
             <div id="inner_wrap">
-                <div id="banner">Philippine Airlines (PAL)</div>
+                <div id="banner">Philippine Airlines (PAL) Ticket</div>
+                <div id="customerinfo">
+                    <table>
+                        <tr>
+                            <td><b>Name:</b></td>
+                            <td><%=fname%></td>
+                        </tr>
+                        <tr>
+                            <td><b>Address:</b></td>
+                            <td><%=address%></td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="header"><h4>Departure</h4></div>
                     <table  class="table_float">
                         <tr>

@@ -28,6 +28,9 @@ body {
     font-size: 22px;
 }
 
+#customerinfo {
+    margin-top: 15px;
+}
 .table_float {
     float:left;
     margin-top:0;
