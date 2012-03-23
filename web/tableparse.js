@@ -57,4 +57,15 @@ function getRadios(){
         traverseElem(departure,departDiv);
 
 }
+
+function resetAll() {
+    var arrival = document.getElementById('arrival');
+    var depart = document.getElementById('departure');
+    var sidebar = document.getElementById('sidebar');
+
+    sidebar.style.display = "none";
+    depart.innerHTML = ""
+    arrival.innerHTML= "";
+
+}
 window.onload = getRadios;
