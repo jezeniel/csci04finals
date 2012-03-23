@@ -71,31 +71,32 @@
                 <div class="header"><h4>Departure</h4></div>
                     <table  class="table_float">
                         <tr>
+                            <td><b>Date</b></td>
                             <td><%=aDate%></td>
                         </tr>
                         <tr>
-                            <td>Price</td>
+                            <td><b>Price</b></td>
                             <td><%=aPrice%></td>
                         </tr>
                         <tr>
-                            <td>Flight #</td>
+                            <td><b>Flight #</b></td>
                             <td><%=aFlightNo%></td>
                         </tr>
                         <tr>
-                            <td>Duration</td>
+                            <td><b>Duration</b></td>
                             <td>3:50</td>
                         </tr>
                        </table>
                        <table>
                         <tr>
-                            <td>From</td>
+                            <td><b>From</b></td>
                         </tr>
                         <tr>
                             <td>Philippines</td>
                             <td><%=aTime%></td>
                         </tr>
                         <tr>
-                            <td><br>Arrive</td>
+                            <td><br><b>Arrive</b></td>
                         </tr>
                         <tr>
                             <td>Singapore</td>
@@ -105,31 +106,32 @@
                 <div class="header"><h4>Return</h4></div>
                     <table class="table_float">
                         <tr>
+                            <td><b>Date</b></td>
                             <td><%=dDate%></td>
                         </tr>
                         <tr>
-                            <td>Price</td>
+                            <td><b>Price</b></td>
                             <td><%=dPrice%></td>
                         </tr>
                         <tr>
+                            <td><b>Flight #</b></td>
                             <td><%=dFlightNo%></td>
-                            <td><%=dTime%></td>
                         </tr>
                         <tr>
-                            <td>Duration</td>
+                            <td><b>Duration</b></td>
                             <td>3:50</td>
                         </tr>
                     </table>
                     <table>
                         <tr>
-                            <td>From</td>
+                            <td><b>From</b></td>
                         </tr>
                         <tr>
                             <td>Singapore</td>
                             <td><%=dTime%></td>
                         </tr>
                         <tr>
-                            <td><br>Arrive</td>
+                            <td><br><b>Arrive</b></td>
                         </tr>
                         <tr>
                             <td>Philippines</td>
