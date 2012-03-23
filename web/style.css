@@ -42,6 +42,11 @@ html,body,div,p,fieldset,label{
   margin-bottom:12px;
 }
 
+#customerinfo {
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
 #departure {
     border-top: 1px dashed #000000;
 }
