@@ -27,6 +27,18 @@
           <div id ="main">
               <div id="main_header"><h3>Online Ticket - Philippines Airlines(PAL)</h3></div>
                   <form action ="transactSuccess.jsp" method="POST">
+                      <div id="customerinfo">
+                          <table>
+                              <tr>
+                                  <td>Name: </td>
+                                  <td><input type="text" name="fullname" size="40"></td>
+                              </tr>
+                              <tr>
+                                  <td>Address: </td>
+                                  <td><input type="text" name="address" size="40"></td>
+                              </tr>
+                          </table>
+                      </div>
                       <!-- TABLE 1 -->
                       <div class="flight_type">Flight Destination </div>
                       <div class="table_format">
@@ -211,11 +223,12 @@
                                   <td>3:50</td>
                                   <td>$201.00</td>
                               </tr>
+                              <tr>
+                                  <td><input type="submit" value="Submit"></td>
+                                  <td><input type="reset" value="Clear" onclick="resetAll()"></td>
+                              </tr>
                           </table>
                       </div>
-
-
-                      <input type="submit" value="Submit">
                   </form>
           </div>
       </div>
