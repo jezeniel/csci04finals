@@ -1,19 +1,19 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
-	<title>Online Ticket - Philippine Airlines</title>
+    <meta charset="UTF-8">
+    <title>Online Ticket - Philippine Airlines</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" type ="text/css" href="css/reset.css" />
-    <link rel ="stylesheet" type="text/css" href="index.css"/>
-	<link rel="stylesheet" type="text/css" href="css/tables.css" />
+    <link rel="stylesheet" type ="text/css" href="css/reset.css" />
+    <link rel ="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tables.css" />
     <script src ="js/tableparse.js" type="text/javascript"></script>
 </head>
 <body>
       <div id ="wrapper">
 
           <div id ="sidebar">
-              <h1>Ticket Info</h1>
+            <h1>Ticket Info</h1>
             <div id ="arrival">
             </div>
             <div id ="departure">
