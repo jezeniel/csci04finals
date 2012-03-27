@@ -1,0 +1,49 @@
+/* 
+    Document   : transactSuccess
+    Created on : 03 22, 12, 1:05:29 AM
+    Author     : jezi22
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+#wrapper {
+    margin: 10px;
+}
+
+#inner_wrap {
+    width: 500px;
+    border: 2px solid #000000;
+    margin: 0 auto;
+    padding:20px 20px 20px 20px;
+}
+
+#banner {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#customerinfo {
+    margin-top: 15px;
+}
+.table_float {
+    float:left;
+    margin-top:0;
+    margin-right:10px;
+}
+
+.table_float td {
+    padding: 0 10px 0 0;
+}
+.table_align_right {
+    text-align: right;
+}
+
+.table_align_left td b {
+    text-align:left;
+}

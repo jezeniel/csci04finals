@@ -13,12 +13,12 @@ function appendContents(elem,elemVal){
     sidebar.style.display = "block";
 
     if(elem.getAttribute("id")== "arrival")
-        elem.innerHTML += "<h4>Departure</h4>";
+        elem.innerHTML += "<h2>Departure</h2>";
     if(elem.getAttribute("id")== "departure")
-        elem.innerHTML += "<h4>Return</h4>";
+        elem.innerHTML += "<h2>Return</h2>";
 
     for(var i=0;i<len;i++){
-        elem.innerHTML+= "<b>" +label[i] + "</b> " + elemVal[i];
+        elem.innerHTML+= "<b>" +label[i] + "</b> " +  elemVal[i];
     }
 }
 
@@ -29,7 +29,7 @@ function extractValues(elemId){
     var arrayValues = [];
     for(var i = 2;i<children.length;i++){
       if(children[i].nodeName=='TD'){
-           arrayValues.push("<p>"+children[i].innerHTML+"</p>");
+           arrayValues.push("<p>" + children[i].innerHTML + "<p>");
 
       }
     }
@@ -52,10 +52,12 @@ function getRadios(){
         var departDiv = document.getElementById('departure');
         var arrival = document.getElementsByName('flArrival');
         var departure = document.getElementsByName('flDeparture');
+		var reset = document.getElementById("reset");
 
         traverseElem(arrival,arrivalDiv);
         traverseElem(departure,departDiv);
-
+		
+		reset.onclick = resetAll;
 }
 
 function resetAll() {

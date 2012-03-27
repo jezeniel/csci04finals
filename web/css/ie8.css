@@ -1,0 +1,16 @@
+td,th{
+	background:transparent;
+	zoom:1;
+}
+
+th{
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFCEEFFC,endColorstr=#BF9EDFFA);
+}
+
+td{
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFD9EFFA,endColorstr=#BFF0F8FD);
+}
+
+tr:hover td{
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFE6F7FD,endColorstr=#BFB6E7FB);
+}

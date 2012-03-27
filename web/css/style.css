@@ -1,0 +1,68 @@
+body{
+	font-family:Verdana,Georgia sans-serif;
+	font-size:14px;
+}
+
+
+/* wrapper */
+#wrapper {
+     background: none repeat scroll 0% 0% #FFD28F;
+     margin: 0pt auto;
+     padding: 0pt;
+     width: 750px;
+}
+/* end of wrapper */
+
+/* sidebar */
+#sidebar {
+    background:#FF8F8F;
+    float:left;
+    width:300px;
+    margin-right:10px;
+}
+	#sidebar h1 {
+		 background: none repeat scroll 0% 0% #C7C717;
+		 font-weight: bold;
+		 padding: 5px;
+		 text-align: center;
+	}	
+	 
+	 #sidebar div{
+		width:250px;
+		padding:10px;
+		margin:15px auto;
+	}
+    
+		#arrival{
+			background:#3EB8DA;
+		}
+
+		#departure{
+			background:#259EC1;
+		}
+
+/* end of sidebar */
+
+/*main*/
+#main {
+    background:#C4EE43;
+    float:right;
+    width:400px;
+    padding:10px;
+}
+
+	#main h1 {
+		 background: none repeat scroll 0% 0% #E6762B;
+		 margin-bottom: 10px;
+		 text-align: center;
+	}
+
+	#customerinfo {
+		 background: none repeat scroll 0% 0% #8D24C1;
+	}
+
+	#customerinfo table td {
+		padding: 10px;
+	}
+
+/*end of main*/
