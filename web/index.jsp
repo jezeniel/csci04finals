@@ -237,14 +237,14 @@
                         <div>
                             <h1>Customer info</h1>
                             <label for="name">Name:</label>
-                            <input type="text" name="fullname" id="" />
+                            <input type="text" name="fullname" id="" placeholder="Your fullname" required ="yes" />
                             <br class='clearFloat'/>
                             <label for="address">Address:</label>
-                            <input type="text" name="address" id="" />
+                            <input type="text" name="address" id="" placeholder="Your address" required="yes"/>
                             <br class='clearFloat'/>
 
                             <input type="submit" value="Submit" />
-                            <input type="reset" value="Clear" id='reset' />
+                            <input type="reset" value="Clear" id='reset'/>
                         </div>
                     </div>
                 </form>

@@ -28,10 +28,10 @@ function extractValues(elemId){
     var children = obj.childNodes;
     var arrayValues = [];
     for(var i = 2;i<children.length;i++){
-      if(children[i].nodeName=='TD'){
-           arrayValues.push("<p>" + children[i].innerHTML + "<p>");
+        if(children[i].nodeName=='TD'){
+            arrayValues.push("<p>" + children[i].innerHTML + "<p>");
 
-      }
+        }
     }
     return arrayValues;
 }
@@ -48,16 +48,15 @@ function traverseElem(obj,elem){
 }
 
 function getRadios(){
-        var arrivalDiv = document.getElementById('arrival');
-        var departDiv = document.getElementById('departure');
-        var arrival = document.getElementsByName('flArrival');
-        var departure = document.getElementsByName('flDeparture');
-		var reset = document.getElementById("reset");
-
-        traverseElem(arrival,arrivalDiv);
-        traverseElem(departure,departDiv);
+    var arrivalDiv = document.getElementById('arrival');
+    var departDiv = document.getElementById('departure');
+    var arrival = document.getElementsByName('flArrival');
+    var departure = document.getElementsByName('flDeparture');
+    var reset = document.getElementById("reset");
+    traverseElem(arrival,arrivalDiv);
+    traverseElem(departure,departDiv);
 		
-		reset.onclick = resetAll;
+    reset.onclick = resetAll;
 }
 
 function resetAll() {
