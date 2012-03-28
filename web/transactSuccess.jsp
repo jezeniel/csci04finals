@@ -69,8 +69,8 @@
         <div id="wrapper">
             <h1> Phil Airlines (PAL) Ticket </h1>
             <div id ="customer-info">
-                <p><b>Name:</b> <%=fname%> </p>
-                <p><b>Address:</b><%=address%></p>
+                <p><span>Name:</span> <%=fname%> </p>
+                <p><span>Address:</span><%=address%></p>
             </div>
 
             <div id="flight-info">
@@ -86,8 +86,13 @@
                 </div>
                 <div>
                     <h2>Flight Return</h2>
-
-                    
+                    <p><span>Origin:</span> Singapore </p>
+                    <p><span>Departure Time:</span> <%=dTime%></p>
+                    <p><span>Destination:</span>Philippines</p>
+                    <p><span>Arrival Time:</span><%=dArTime%></p>
+                    <p><span>Date:</span><%=dDate%></p>
+                    <p><span>Price:</span><%=dPrice%></p>
+                    <p><span>Flight #:</span><%=dFlightNo%></p>
                 </div>
             </div>
         </div>

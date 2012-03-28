@@ -5,39 +5,47 @@ body {
 
 #wrapper {
      background: none repeat scroll 0% 0% blue;
-     margin: 0pt auto;
-     width: 900px;
+     margin: 10px auto;
+     width: 700px;
+}
+
+#wrapper h1 {
+     background: none repeat scroll 0% 0% orange;
+     font-size: 17px;
+     padding: 10px 0pt;
+     text-align: center;
 }
 
 #customer-info {
-     background: none repeat scroll 0% 0% green;
+     padding-left: 45px;
 }
 
 #flight-info {
-     background: none repeat scroll 0% 0% pink;
+     background: none repeat scroll 0% 0% green;
      margin: 0pt auto;
      overflow: hidden;
-     width: 600px;
 }
 
 #flight-info div {
      background: none repeat scroll 0% 0% orange;
+     border-radius: 20px 20px 20px 20px;
      float: left;
-     margin-left: 20px;
+     margin: 40px;
+     padding: 10px;
      width: 250px;
 }
 
-#flight-info div h2{
-    margin:10px 0 10px 5px;
-    font-size:16px;
+#flight-info div h2 {
+     font-size: 14px;
+     margin: 10px 0pt 10px 5px;
 }
 
 #flight-info div > p {
      margin-bottom: 10px;
 }
 
-#flight-info div span {
-     display: inline-block;
+p>span{
+    display: inline-block;
      font-weight: bold;
      margin: 0pt 20px 0pt 15px;
      width: 100px;
