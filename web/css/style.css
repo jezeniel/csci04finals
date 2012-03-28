@@ -1,3 +1,9 @@
+body {
+    background: -webkit-gradient(linear,0 0 ,0 100%,from(#89D8FA),to(#FFFFFF)) ;
+    background: -moz-linear-gradient(center top , #89D8FA, #FFFFFF);
+    background-repeat: no-repeat;
+}
+
 /*--Wrapper--*/
 #wrapper {
     font-family: Helvetica,Arial sans-serif;
@@ -100,7 +106,7 @@
 
     #customer-info input[type="submit"], #customer-info input[type="reset"] {
         background: -moz-linear-gradient(center top , #CEEFFC, #9EDFFA);
-        background: -webkit-gradient(linear,left top,left bottom,from(#D9EFFA),to(#F0F8FD));
+        background: -webkit-gradient(linear,left top,left bottom,from(#CEEFFC),to(#9EDFFA));
         border-radius: 30px 30px 30px 30px;
         border: 1px solid #708499;
         display: inline-block;
