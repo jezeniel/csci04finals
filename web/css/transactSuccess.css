@@ -1,17 +1,44 @@
-/* 
-    Document   : transactSuccess
-    Created on : 03 22, 12, 1:05:29 AM
-    Author     : jezi22
-    Description:
-        Purpose of the stylesheet follows.
-*/
-
 body {
      font-family: Helvetica,Arial sans-serif;
-     font-size:12px;
+     font-size: 12px;
 }
 
 #wrapper {
      background: none repeat scroll 0% 0% blue;
-     margin: 10px;
+     margin: 0pt auto;
+     width: 900px;
+}
+
+#customer-info {
+     background: none repeat scroll 0% 0% green;
+}
+
+#flight-info {
+     background: none repeat scroll 0% 0% pink;
+     margin: 0pt auto;
+     overflow: hidden;
+     width: 600px;
+}
+
+#flight-info div {
+     background: none repeat scroll 0% 0% orange;
+     float: left;
+     margin-left: 20px;
+     width: 250px;
+}
+
+#flight-info div h2{
+    margin:10px 0 10px 5px;
+    font-size:16px;
+}
+
+#flight-info div > p {
+     margin-bottom: 10px;
+}
+
+#flight-info div span {
+     display: inline-block;
+     font-weight: bold;
+     margin: 0pt 20px 0pt 15px;
+     width: 100px;
 }
