@@ -16,7 +16,7 @@
 		 margin-bottom: 10px;
 	}
 	.table-format th, .table-format td {
-		 color: #09252A;
+		 
 		 padding: 10px;
 		 text-align: center;
 		 text-shadow: 1px 1px 2px #2C5D63;
@@ -24,6 +24,7 @@
 	}
 
 	.table-format th{
+                color: #09252A;
 		font-size:13px;
 		border-top:1px solid #AEE4FB;
                 /*For browsers that don't yet support gradient,Give them a solid color*/
@@ -33,6 +34,7 @@
 		text-transform:uppercase;
 	}
 	.table-format td{
+                color: #666699;
 		border-top: 1px solid #FFFFFF;
                 background:#F2FAFD;
 		background: -moz-linear-gradient(center top , #F2FAFD, #F0F8FD);

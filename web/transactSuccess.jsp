@@ -5,12 +5,10 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-
-<html>
+<!DOCTYPE HTML>
+<html lang="en-US">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="transactSuccess.css">
         <title>Transaction Successful</title>
         <%
@@ -68,91 +66,25 @@
     </head>
     <body>
         <div id="wrapper">
-            <div id="inner_wrap">
-                <div id="banner">Philippine Airlines (PAL) Ticket</div>
-                <div id="customerinfo">
-                    <table>
-                        <tr>
-                            <td><b>Name:</b></td>
-                            <td><%=fname%></td>
-                        </tr>
-                        <tr>
-                            <td><b>Address:</b></td>
-                            <td><%=address%></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="header"><h4>Departure</h4></div>
-                    <table  class="table_float">
-                        <tr>
-                            <td><b>Date</b></td>
-                            <td><%=aDate%></td>
-                        </tr>
-                        <tr>
-                            <td><b>Price</b></td>
-                            <td><%=aPrice%></td>
-                        </tr>
-                        <tr>
-                            <td><b>Flight #</b></td>
-                            <td><%=aFlightNo%></td>
-                        </tr>
-                        <tr>
-                            <td><b>Duration</b></td>
-                            <td>3:50</td>
-                        </tr>
-                       </table>
-                       <table>
-                        <tr>
-                            <td><b>From</b></td>
-                        </tr>
-                        <tr>
-                            <td>Philippines</td>
-                            <td><%=aTime%></td>
-                        </tr>
-                        <tr>
-                            <td><br><b>Arrive</b></td>
-                        </tr>
-                        <tr>
-                            <td>Singapore</td>
-                            <td><%=aArTime%></td>
-                        </tr>
-                       </table>
-                <div class="header"><h4>Return</h4></div>
-                    <table class="table_float">
-                        <tr>
-                            <td><b>Date</b></td>
-                            <td><%=dDate%></td>
-                        </tr>
-                        <tr>
-                            <td><b>Price</b></td>
-                            <td><%=dPrice%></td>
-                        </tr>
-                        <tr>
-                            <td><b>Flight #</b></td>
-                            <td><%=dFlightNo%></td>
-                        </tr>
-                        <tr>
-                            <td><b>Duration</b></td>
-                            <td>3:50</td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td><b>From</b></td>
-                        </tr>
-                        <tr>
-                            <td>Singapore</td>
-                            <td><%=dTime%></td>
-                        </tr>
-                        <tr>
-                            <td><br><b>Arrive</b></td>
-                        </tr>
-                        <tr>
-                            <td>Philippines</td>
-                            <td><%=dArTime%></td>
-                        </tr>
-                    </table>
+            <h1> Flight Information </h1>
+            <div id ="customer-info">
+                <p><b>Name:</b> <%=fname%> </p>
+                <p><b>Address:</b><%=address%></p>
             </div>
         </div>
+
+            <div id="flight-info">
+                <div>
+                    <h2>Flight Return </h2>
+                    <p> <b>Flight# : </b> <%=aFlightNo%> </p>
+                    <p> <b>Date : </b> <%=aDate%></p>
+                    <p> <b> Time : </b> <%=aTime%></p>
+
+
+                </div>
+                <div>
+                    <h2>Flight Departure</h2>
+                </div>
+            </div>
     </body>
 </html>
