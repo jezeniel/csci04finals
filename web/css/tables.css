@@ -26,19 +26,25 @@
 	.table-format th{
 		font-size:13px;
 		border-top:1px solid #AEE4FB;
+                /*For browsers that don't yet support gradient,Give them a solid color*/
+                background:#CEEFFC;
 		background: -moz-linear-gradient(center top , #CEEFFC, #9EDFFA);
-		/* background:-webkit-gradient(linear,left top,left bottom,from(#CEEFFC),to(#9EDFFA)) */
+		background:-webkit-gradient(linear,left top,left bottom,from(#CEEFFC),to(#9EDFFA));
 		text-transform:uppercase;
 	}
 	.table-format td{
 		border-top: 1px solid #FFFFFF;
+                background:#F2FAFD;
 		background: -moz-linear-gradient(center top , #F2FAFD, #F0F8FD);
+                background:-webkit-gradient(linear,left top,left bottom,from(#CEEFFC),to(#9EDFFA));
 		border-right: 1px dashed #386977;
 	}
 
 	tr:hover td {
+                 background:#E6F7FD;
 		 background: -moz-linear-gradient(center top , #E6F7FD,#B6E7FB);
-	   
+                 background:-webkit-gradient(linear,left top,left bottom,from(#CEEFFC),to(#9EDFFA));
+
 	}
 
 	
