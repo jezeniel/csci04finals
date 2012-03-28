@@ -16,6 +16,11 @@
         <link rel ="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="stylesheet" type="text/css" href="css/tables.css" />
         <script src ="js/tableparse.js" type="text/javascript"></script>
+        <!--[if IE]>
+        <script type="text/javascript">
+            alert("Use updated Firefox/Google Chrome for best Experience!");
+        </script>
+        <![endif]-->
 </head>
 <body>
         <div id ="wrapper">
