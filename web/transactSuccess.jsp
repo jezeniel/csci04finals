@@ -66,7 +66,7 @@
     </head>
     <body>
         <div id="wrapper">
-            <h1> Flight Information </h1>
+            <h1> Phil Airlines (PAL) Ticket </h1>
             <div id ="customer-info">
                 <p><b>Name:</b> <%=fname%> </p>
                 <p><b>Address:</b><%=address%></p>
@@ -75,7 +75,7 @@
 
             <div id="flight-info">
                 <div>
-                    <h2>Flight Return </h2>
+                    <h2>Flight Departure </h2>
                     <p> <b>Flight# : </b> <%=aFlightNo%> </p>
                     <p> <b>Date : </b> <%=aDate%></p>
                     <p> <b> Time : </b> <%=aTime%></p>
@@ -83,7 +83,7 @@
 
                 </div>
                 <div>
-                    <h2>Flight Departure</h2>
+                    <h2>Flight Return</h2>
                 </div>
             </div>
     </body>
