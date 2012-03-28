@@ -5,6 +5,7 @@
     margin: 10px auto;
     overflow: hidden;
     width: 900px;
+    padding: 10px;
 }
 /*-- End of Wrapper--*/
 
@@ -17,6 +18,7 @@
     width: 300px;
     overflow:hidden;
     border-radius: 30px 30px 30px 30px;
+    box-shadow: 0 0 3px 3px #999999;
 }
     #sidebar h1, #sidebar h2{
         padding:10px;
@@ -48,6 +50,8 @@
     background: none repeat scroll 0% 0% #D1F0FD;
     float:right;
     width:550px;
+    border-radius:30px;
+    box-shadow: 0 0 3px 3px #888888;
 }
 /*--End of Main--*/
 
@@ -55,8 +59,9 @@
 /*--customer-info--*/
 
 #customer-info {
-    background: none repeat scroll 0% 0% #8CF2C6;
+    background: none repeat scroll 0% 0% #89D8FA;
     padding: 10px;
+    border-radius: 0 0 30px 30px;
 }
     #customer-info div{
         position:relative;
@@ -95,6 +100,7 @@
 
     #customer-info input[type="submit"], #customer-info input[type="reset"] {
         background: -moz-linear-gradient(center top , #CEEFFC, #9EDFFA);
+        background: -webkit-gradient(linear,left top,left bottom,from(#D9EFFA),to(#F0F8FD));
         border-radius: 30px 30px 30px 30px;
         border: 1px solid #708499;
         display: inline-block;
@@ -113,6 +119,7 @@
 
     #customer-info input[type="submit"]:hover,#customer-info input[type="reset"]:hover{
         background: -moz-linear-gradient(center top , #D9EFFA, #F0F8FD);
+        background: -webkit-gradient(linear,left top,left bottom,from(#D9EFFA),to(#F0F8FD));
         cursor:pointer;
     }
 /*--End of customer-info--*/
@@ -137,6 +144,7 @@
 }
 
 .flight-header{
+    border-radius: 30px 30px 0 0;
     background: none repeat scroll 0pt 0pt #89D8FA;
     font-size: 30px;
     padding: 10px;

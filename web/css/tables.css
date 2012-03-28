@@ -19,7 +19,6 @@
 		 
 		 padding: 10px;
 		 text-align: center;
-		 text-shadow: 1px 1px 2px #2C5D63;
 		 vertical-align:middle;
 	}
 
@@ -30,22 +29,21 @@
                 /*For browsers that don't yet support gradient,Give them a solid color*/
                 background:#CEEFFC;
 		background: -moz-linear-gradient(center top , #CEEFFC, #9EDFFA);
-		background:-webkit-gradient(linear,left top,left bottom,from(#CEEFFC),to(#9EDFFA));
+		background: -webkit-gradient(linear,left top,left bottom,from(#CEEFFC),to(#9EDFFA));
 		text-transform:uppercase;
+                text-shadow: 1px 1px 2px #2C5D63;
 	}
 	.table-format td{
                 color: #666699;
 		border-top: 1px solid #FFFFFF;
                 background:#F2FAFD;
-		background: -moz-linear-gradient(center top , #F2FAFD, #F0F8FD);
-                background:-webkit-gradient(linear,left top,left bottom,from(#CEEFFC),to(#9EDFFA));
 		border-right: 1px dashed #386977;
 	}
 
 	tr:hover td {
                  background:#E6F7FD;
 		 background: -moz-linear-gradient(center top , #E6F7FD,#B6E7FB);
-                 background:-webkit-gradient(linear,left top,left bottom,from(#CEEFFC),to(#9EDFFA));
+                 background: -webkit-gradient(linear,left top,left bottom,from(#E6F7FD),to(#B6E7FB));
 
 	}
 
