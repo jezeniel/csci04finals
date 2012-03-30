@@ -9,7 +9,6 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/transactSuccess.css">
         <title>Transaction Successful</title>
         <%
@@ -67,6 +66,7 @@
     </head>
     <body>
         <div id="wrapper">
+            <div id="innerwrap">
             <h1> Phil Airlines (PAL) Ticket </h1>
             <div id ="customer-info">
                 <p><span>Name:</span> <%=fname%> </p>
@@ -95,6 +95,7 @@
                     <p><span>Flight #:</span><%=dFlightNo%></p>
                 </div>
             </div>
+        </div>
         </div>
 
             
